@@ -1,0 +1,485 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SushiswapSubscription | @ycabal/sushi-sdk</title>
+	<meta name="description" content="Documentation for @ycabal/sushi-sdk">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@ycabal/sushi-sdk</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@ycabal/sushi-sdk</a>
+				</li>
+				<li>
+					<a href="sushiswapsubscription.html">SushiswapSubscription</a>
+				</li>
+			</ul>
+			<h1>Class SushiswapSubscription</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents a disposable resource, such as the execution of an Observable. A
+							Subscription has one important method, <code>unsubscribe</code>, that takes no argument
+						and just disposes the resource held by the subscription.</p>
+					</div>
+					<p>Additionally, subscriptions may be grouped together through the <code>add()</code>
+						method, which will attach a child Subscription to the current Subscription.
+						When a Subscription is unsubscribed, all its children (and its grandchildren)
+					will be unsubscribed as well.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">SushiswapSubscription</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><span class="tsd-signature-type">SubscriptionLike</span></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="sushiswapsubscription.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-external"><a href="sushiswapsubscription.html#_parentorparents" class="tsd-kind-icon">_parent<wbr>OrParents</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="sushiswapsubscription.html#_subscriptions" class="tsd-kind-icon">_subscriptions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="sushiswapsubscription.html#closed" class="tsd-kind-icon">closed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="sushiswapsubscription.html#empty" class="tsd-kind-icon">EMPTY</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="sushiswapsubscription.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="sushiswapsubscription.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="sushiswapsubscription.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Sushiswap<wbr>Subscription<span class="tsd-signature-symbol">(</span>unsubscribe<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/rxjs/internal/Subscription.d.ts:25</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> unsubscribe: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-external">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-external">
+					<a name="_parentorparents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _parent<wbr>OrParents</h3>
+					<div class="tsd-signature tsd-kind-icon">_parent<wbr>OrParents<span class="tsd-signature-symbol">:</span> <a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a><span class="tsd-signature-symbol"> | </span><a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/rxjs/internal/Subscription.d.ts:23</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
+					<a name="_subscriptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _subscriptions</h3>
+					<div class="tsd-signature tsd-kind-icon">_subscriptions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/rxjs/internal/Subscription.d.ts:25</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="closed" class="tsd-anchor"></a>
+					<h3>closed</h3>
+					<div class="tsd-signature tsd-kind-icon">closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of SubscriptionLike.closed</p>
+						<ul>
+							<li>Defined in node_modules/rxjs/internal/Subscription.d.ts:21</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A flag to indicate whether this Subscription has already been unsubscribed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="empty" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EMPTY</h3>
+					<div class="tsd-signature tsd-kind-icon">EMPTY<span class="tsd-signature-symbol">:</span> <a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/rxjs/internal/Subscription.d.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>nocollapse</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="add" class="tsd-anchor"></a>
+					<h3>add</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>teardown<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TeardownLogic</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/rxjs/internal/Subscription.d.ts:58</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a tear down to be called during the unsubscribe() of this
+									Subscription. Can also be used to add a child subscription.</p>
+								</div>
+								<p>If the tear down being added is a subscription that is already
+									unsubscribed, is the same reference <code>add</code> is being called on, or is
+								<code>Subscription.EMPTY</code>, it will not be added.</p>
+								<p>If this subscription is already in an <code>closed</code> state, the passed
+								tear down logic will be executed immediately.</p>
+								<p>When a parent subscription is unsubscribed, any child subscriptions that were added to it are also unsubscribed.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>teardown: <span class="tsd-signature-type">TeardownLogic</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The additional logic to execute on
+										teardown.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a></h4>
+							<p>Returns the Subscription used or created to be
+								added to the inner subscriptions list. This Subscription can be used with
+								<code>remove()</code> to remove the passed teardown logic from the inner subscriptions
+							list.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="remove" class="tsd-anchor"></a>
+					<h3>remove</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>subscription<span class="tsd-signature-symbol">: </span><a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in node_modules/rxjs/internal/Subscription.d.ts:65</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a Subscription from the internal list of subscriptions that will
+									unsubscribe during the unsubscribe process of this Subscription.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>subscription: <a href="sushiswapsubscription.html" class="tsd-signature-type" data-tsd-kind="Class">SushiswapSubscription</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The subscription to remove.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="unsubscribe" class="tsd-anchor"></a>
+					<h3>unsubscribe</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">unsubscribe<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of SubscriptionLike.unsubscribe</p>
+								<ul>
+									<li>Defined in node_modules/rxjs/internal/Subscription.d.ts:37</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Disposes the resources held by the subscription. May, for instance, cancel
+										an ongoing Observable execution or cancel any other type of work that
+									started when the Subscription was created.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/chainid.html" class="tsd-kind-icon">Chain<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/errorcodes.html" class="tsd-kind-icon">Error<wbr>Codes</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="comp.html" class="tsd-kind-icon">COMP</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="dai.html" class="tsd-kind-icon">DAI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sushiswapcontractfactorypublic.html" class="tsd-kind-icon">Sushiswap<wbr>Contract<wbr>Factory<wbr>Public</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sushiswaperror.html" class="tsd-kind-icon">Sushiswap<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sushiswappair.html" class="tsd-kind-icon">Sushiswap<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sushiswappaircontractfactorypublic.html" class="tsd-kind-icon">Sushiswap<wbr>Pair<wbr>Contract<wbr>Factory<wbr>Public</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sushiswappairfactory.html" class="tsd-kind-icon">Sushiswap<wbr>Pair<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sushiswappairsettings.html" class="tsd-kind-icon">Sushiswap<wbr>Pair<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sushiswaproutercontractfactorypublic.html" class="tsd-kind-icon">Sushiswap<wbr>Router<wbr>Contract<wbr>Factory<wbr>Public</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter tsd-is-external">
+						<a href="sushiswapstream.html" class="tsd-kind-icon">Sushiswap<wbr>Stream</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-is-external">
+						<a href="sushiswapsubscription.html" class="tsd-kind-icon">Sushiswap<wbr>Subscription</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="sushiswapsubscription.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-external">
+								<a href="sushiswapsubscription.html#_parentorparents" class="tsd-kind-icon">_parent<wbr>OrParents</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
+								<a href="sushiswapsubscription.html#_subscriptions" class="tsd-kind-icon">_subscriptions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="sushiswapsubscription.html#closed" class="tsd-kind-icon">closed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="sushiswapsubscription.html#empty" class="tsd-kind-icon">EMPTY</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="sushiswapsubscription.html#add" class="tsd-kind-icon">add</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="sushiswapsubscription.html#remove" class="tsd-kind-icon">remove</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="sushiswapsubscription.html#unsubscribe" class="tsd-kind-icon">unsubscribe</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="tokenfactorypublic.html" class="tsd-kind-icon">Token<wbr>Factory<wbr>Public</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="tokensfactorypublic.html" class="tsd-kind-icon">Tokens<wbr>Factory<wbr>Public</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="usdc.html" class="tsd-kind-icon">USDC</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="usdt.html" class="tsd-kind-icon">USDT</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="weth.html" class="tsd-kind-icon">WETH</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/allowanceandbalanceof.html" class="tsd-kind-icon">Allowance<wbr>And<wbr>Balance<wbr>Of</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/routequote.html" class="tsd-kind-icon">Route<wbr>Quote</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/sushiswappaircontextforchainid.html" class="tsd-kind-icon">Sushiswap<wbr>Pair<wbr>Context<wbr>For<wbr>Chain<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/sushiswappaircontextforproviderurl.html" class="tsd-kind-icon">Sushiswap<wbr>Pair<wbr>Context<wbr>For<wbr>Provider<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/token.html" class="tsd-kind-icon">Token</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/tradecontext.html" class="tsd-kind-icon">Trade<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/transaction.html" class="tsd-kind-icon">Transaction</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
