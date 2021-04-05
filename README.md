@@ -1,4 +1,6 @@
-# Installing
+## ycabal-sushi-sdk
+
+[![nodejs](https://github.com/backbonecabal/sushi-sdk/actions/workflows/nodejs.yml/badge.svg)](https://github.com/backbonecabal/sushi-sdk/actions/workflows/nodejs.yml)
 
 >  https://sushi-sdk.netlify.app
 
